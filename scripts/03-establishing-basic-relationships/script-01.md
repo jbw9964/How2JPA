@@ -267,8 +267,11 @@ DDL 을 보면 `Omitted_Member` 라는 알 수 없는 테이블이 생성되었�
 아래의 내용은 Hibernate 문서에서 발취한 내용이다. [`[2]`](#reference), [`[3]`](#reference)
 
 > 단방향 `[1:N]` 관계시 _"FK column 의 주도권"_ 을 owner 가 갖는 것은 흔치 않으며 권장하지 않습니다.
+> 
 > 때문에 join table 전략으로 단방향 `[1:N]` 관계를 해결하길 강력히 권장합니다.
+> 
 > ...
+> 
 > 단방향 `[1:N]` 관계에서 `@JoinColumn` 으로 physical mapping 정보를 제공하지 않으면 기본적으로 join table 전략을 사용합니다.
 
 `[1:N]` 또는 `[N:1]` 관계시 DB 에서 FK 는 반드시 `N` 테이블에 존재할 수 밖에 없다.
