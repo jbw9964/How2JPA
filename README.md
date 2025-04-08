@@ -1,5 +1,9 @@
 
-# HOW2JPA
+<!-- how2jpa-logo-origin.png -->
+
+<p align="center">
+    <img src="assets/how2jpa-logo-origin.png" width="80%" height="80%" style="display: block; margin-left: auto; margin-right: auto;">
+</p>
 
 [자바 ORM 표준 JPA 프로그래밍 - 기본편, 김영한](https://www.inflearn.com/course/ORM-JPA-Basic) 강의를 듣고 <span style="color:#7898FB">**JPA 기초 사용법**</span> 을 정리한 Repo
 
