@@ -4,6 +4,8 @@ DB 에 저장하는 정보는 결국 현실의 요구를 바탕으로 선택되�
 
 때문에 종종 DB 에 저장되는 정보가 현실에선 논리적 상-하 관계를 가질 때가 존재한다.
 
+<!-- inheritance-1.png -->
+
 <p align="center">
     <img src="../../assets/04-establishing-advanced-relationships/inheritance-1.png" width="60%" height="60%">
 </p>
@@ -564,6 +566,8 @@ public class SubEntityA extends SupEntity { }
 public class SubEntityB extends SupEntity { }
 ```
 
+<!-- inheritance-vs-mappedsuperclass-1.png -->
+
 <p align="center">
   <img src="../../assets/04-establishing-advanced-relationships/inheritance-vs-mappedsuperclass-1.png" width="50%" height="50%">
 </p>
@@ -599,6 +603,8 @@ public class TestEntity {
 
 그렇다. <span style="color:#7898FB">**`MappedSup` 는 엔티티가 아니기 때문에 엔티티 연관관계를 맺을 수 없는 것이다!**</span>
 실제로 아래처럼 `MappedSup` 타입으로 이용하려 해도 IDE 가 경고할 뿐더러 실행하면 에러가 발생한다.
+
+<!-- inheritance-vs-mappedsuperclass-2.png -->
 
 <p align="center">
   <img src="../../assets/04-establishing-advanced-relationships/inheritance-vs-mappedsuperclass-2.png" width="70%" height="70%">

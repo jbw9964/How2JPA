@@ -7,6 +7,8 @@ ORM 은 결국 DB 테이블을 객체로 구성해 편하게 개발하기 위한
 
 다음 상황을 생각해보자.
 
+<!-- obj-vs-table-1.png -->
+
 <p align="center">
     <img src="../../assets/02-basic-entity-relation-mapping/obj-vs-table-1.png" width="80%" height="80%">
 </p>
@@ -194,6 +196,8 @@ Hibernate:
             id=?
 ==================================
 ```
+
+<!-- owner-of-relation-1.png -->
 
 <p align="center">
   <img src="../../assets/02-basic-entity-relation-mapping/owner-of-relation-1.png" width="50%" height="50%" >

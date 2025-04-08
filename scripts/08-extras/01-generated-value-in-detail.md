@@ -90,7 +90,7 @@ JPA 의 영속 컨텍스트를 생각했을 때, `em.persist( ... )` 를 사용�
 
 SQL 을 보면 실제 insert 는 트랜잭션이 commit 시 일어남을 볼 수 있다. 그러면 `BEFORE`, `AFTER` 사이에 있는 저건 뭘까?
 
-| ![seq-1.png](../../assets/01-entities/seq-1.png) | ![seq-2.png](../../assets/01-entities/seq-2.png) |
+| ![seq-1.png](../../assets/08-extras/01-generated-value-in-detail/seq-1.png) | ![seq-2.png](../../assets/08-extras/01-generated-value-in-detail/seq-2.png) |
 |:------------------------------------------------:|:------------------------------------------------:|
 |                   엔티티 삽입 전 SEQ                   |                   엔티티 삽입 후 SEQ                   |
 
@@ -153,8 +153,10 @@ test();
 test();
 ```
 
+<!-- seq-3.png -->
+
 <p align="center">
-    <img src="../../assets/01-entities/seq-3.png" width="60%" height="60%">
+    <img src="../../assets/08-extras/01-generated-value-in-detail/seq-3.png" width="60%" height="60%">
 </p>
 
 ---

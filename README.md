@@ -1,7 +1,7 @@
 
 # HOW2JPA
 
-[자바 ORM 표준 JPA 프로그래밍 - 기본편, 김영한](https://www.inflearn.com/course/ORM-JPA-Basic) 강의를 듣고 **JPA 기초 사용법** 을 정리한 Repo
+[자바 ORM 표준 JPA 프로그래밍 - 기본편, 김영한](https://www.inflearn.com/course/ORM-JPA-Basic) 강의를 듣고 <span style="color:#7898FB">**JPA 기초 사용법**</span> 을 정리한 Repo
 
 ---
 

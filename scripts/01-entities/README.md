@@ -1,5 +1,5 @@
 
-# JPA 의 Entity
+# 1. JPA 의 Entity
 
 ---
 
