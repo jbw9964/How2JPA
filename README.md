@@ -19,9 +19,9 @@
 
 ### [5. JPA 에서의 타입](scripts/05-types-in-jpa/README.md)
 
-### [6. JPQL 기본](scripts/06-basic-jpql/README.md)
+### [6. JPQL 기본](scripts/06-jpql-basic/README.md)
 
-### [7. JPQL 고급](scripts/07-advanced-jpql/README.md)
+### [7. JPQL 고급](scripts/07-jpql-advance/README.md)
 
 ### [8. 기타 주요 개념](./scripts/08-extras)
 

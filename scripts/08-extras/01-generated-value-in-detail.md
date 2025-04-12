@@ -301,9 +301,9 @@ MEM      : 0x3a082ff4
 
 앞선 설명으로 SEQUENCE, IDENTITY 두 전략의 작동 방식을 확인했고, IDENTITY 가 의도치 않은 `flush` 를 일으킬 수 있다는 사실을 확인하였다.
 
-이는 매우 큰 단점으로 작용할 수 있는데, 대표적인 예시가 BATCH INSERT 이다.
+이는 매우 큰 단점으로 작용할 수 있는데, 대표적인 예시가 Bulk INSERT 이다.
 
-간단히 말해 BATCH 는 어느 작업을 다수의 쿼리로 진행하지 않고 단 하나의 쿼리로 진행하는 작업이다.
+간단히 말해 Bulk 는 어느 작업을 다수의 쿼리로 진행하지 않고 단 하나의 쿼리로 진행하는 작업이다.
 
 ```sql
 -- 4 개의 Test 를 4 개의 쿼리로 생성
@@ -313,11 +313,10 @@ INSERT INTO Test values ();
 INSERT INTO Test values ();
 
 -- 새로운 4 개의 Test 를 한번의 쿼리로 생성
--- 사실 SQL 이니까 Bulk insert 라 불러야 하는데 대충 비슷하게 생각
 INSERT INTO Test values (), (), (), ();
 ```
 
-그런데 IDENTITY 전략은 JPA 가 동일성을 보장하기 위해 `em.persist( ... )` 마다 `flush` 하므로, <span style="color:#7898FB">어플리케이션이 BATCH INSERT 하지 않고 N 번의 SINGLE INSERT 를 발생시킬 수 있다.</span>
+그런데 IDENTITY 전략은 JPA 가 동일성을 보장하기 위해 `em.persist( ... )` 마다 `flush` 하므로, <span style="color:#7898FB">어플리케이션이 BULK INSERT 하지 않고 N 번의 SINGLE INSERT 를 발생시킬 수 있다.</span>
 
 그럼 이걸 어떻게 해결할 수 있을까? 해결법을 검색해 아래의 글을 발견했다.
 

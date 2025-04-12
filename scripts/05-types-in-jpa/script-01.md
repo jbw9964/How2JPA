@@ -402,8 +402,6 @@ class TestEntity {
 
 ```
 
-<span style="color:#7898FB"></span>
-
 ```
 Hibernate:    // [0]
     create table TestEntity (
