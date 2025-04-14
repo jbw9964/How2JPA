@@ -1,5 +1,6 @@
 services:
   h2-database:
+    container_name: h2-database
     image: oscarfonts/h2
     ports:
       - "1521:1521"   # cli
@@ -13,6 +14,7 @@ services:
     restart: unless-stopped
 
   mysql-database:
+    container_name: mysql-database
     image: mysql
     ports:
       - "3306:3306"

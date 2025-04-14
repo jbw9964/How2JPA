@@ -1,4 +1,3 @@
-
 <!-- how2jpa-logo-origin.png -->
 
 <p align="center">
@@ -24,5 +23,50 @@
 ### [7. JPQL 고급](scripts/07-jpql-advance/README.md)
 
 ### [8. 기타 주요 개념](./scripts/08-extras)
+
+---
+
+### H2 & MySQL 셋업
+
+[db-docker-compose.yml](./db-docker-compose.yml) 로 container 설정 변경 가능.
+
+|          H2 관련 설정          |                             값                             |
+|:--------------------------:|:---------------------------------------------------------:|
+|          사용 image          | [`oscarfonts/h2`](https://hub.docker.com/r/oscarfonts/h2) |
+|        Container 이름        |                       `h2-database`                       |
+|     H2 shell port bind     |                        `1521:1521`                        |
+| H2 web interface port bind |                          `81:81`                          |
+|          기본 User           |                           `sa`                            |
+|         기본 User PW         |                            없음                             |
+
+|      MySQL 관련 설정      |                          값                           |
+|:---------------------:|:----------------------------------------------------:|
+|       사용 image        | [`mysql`](https://hub.docker.com/_/mysql) (Official) |
+|     Container 이름      |                   `mysql-database`                   |
+| MySQL shell port bind |                     `3306:3306`                      |
+|        기본 User        |                        `root`                        |
+|      기본 User PW       |                        `root`                        |
+
+- DB container 띄우기
+
+```bash
+docker-compose -f ./db-docker-compose.yml up -d
+```
+
+- H2 shell 접속
+
+```bash
+docker exec -it h2-database h2cli
+```
+
+- MySQL shell 접속
+
+```bash
+docker exec -it mysql-database mysql -u root -p
+```
+
+```
+Enter password: [root]
+```
 
 ---
