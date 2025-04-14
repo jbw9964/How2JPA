@@ -26,5 +26,3 @@
 ### [8. 기타 주요 개념](./scripts/08-extras)
 
 ---
-
-<span style="color:#7898FB"></span>
