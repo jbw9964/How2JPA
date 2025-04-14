@@ -38,6 +38,7 @@
 | H2 web interface port bind |                          `81:81`                          |
 |          기본 User           |                           `sa`                            |
 |         기본 User PW         |                            없음                             |
+|        DB 정보 저장 경로         |                        `./h2-data`                        |
 
 |      MySQL 관련 설정      |                          값                           |
 |:---------------------:|:----------------------------------------------------:|
@@ -46,6 +47,7 @@
 | MySQL shell port bind |                     `3306:3306`                      |
 |        기본 User        |                        `root`                        |
 |      기본 User PW       |                        `root`                        |
+|      DB 정보 저장 경로      |                    `./mysql-data`                    |
 
 - DB container 띄우기
 
